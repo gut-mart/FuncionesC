@@ -8,13 +8,29 @@
 #include "mchar.h"
 #include "ini_mchar.h"     // Estructura del registro mchar
 
-T_mchar* ini_mchar(void)
-{
-	T_mchar* p_mchar=NULL;
-	Usit longitud_registro=(unsigned int)sizeof(T_id);
-	Usit total=(LONG_MCHAR)*(longitud_registro)+1;
-	p_mchar =malloc(total);
-	printf("registro >%i",longitud_registro);
+T_mchar* ini_mchar(void){
+	static T_mchar* p_mchar=NULL;//p_mchar como variable estatica.
+//                                 Se inicia una sola vez y queda anclada
+//                                 permanentemente asta el fin del programa main
+	
+	static char bandera='0';     // '0' no inicializada;
+	
+	
+	if(bandera=='0'){
+		
+		printf("\nbandera =%c",bandera);  
+		
+		Usit total=(LONG_MCHAR)*sizeof(T_mchar);
+		p_mchar =malloc(total);
+		bandera='1';              //'1'  inicializada;
+		
+	}
+	printf("\nbandera =%c",bandera);
+	
+	
+	
+	
+	
 	
 	
 	return p_mchar;
