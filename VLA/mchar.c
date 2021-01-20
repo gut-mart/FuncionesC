@@ -12,7 +12,7 @@ T_mchar* mchar(Usit filas,Usit columnas,char* id,Usic dato){
 	T_mchar* p_mchar=ini_mchar(); //Esta funcion solo se inicia una vez.
 	
 		
-	
+	p_mchar->direccion=direccion(filas,columnas);
 	p_mchar->columnas=columnas;
 	p_mchar->filas=filas;
 	p_mchar->dato=dato;
