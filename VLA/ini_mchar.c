@@ -18,14 +18,14 @@ T_mchar* ini_mchar(void){
 	
 	if(bandera=='0'){
 		
-		printf("\nbandera =%c",bandera);  
+		//printf("\nbandera =%c",bandera);  
 		
 		Usit total=(LONG_MCHAR)*sizeof(T_mchar);
 		p_mchar =malloc(total);
 		bandera='1';              //'1'  inicializada;
 		
 	}
-	printf("\nbandera =%c",bandera);
+	//printf("\nbandera =%c",bandera);
 	
 	
 	

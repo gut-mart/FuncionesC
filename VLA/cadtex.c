@@ -12,11 +12,13 @@ char* cadtex(char* id)
 	// con una longitud de LONG_ID elementos.
 	// Se almacena la direccion en p_id.
 	 char* p_id=(char*)malloc(LONG_ID*sizeof(char));
-	*(p_id+LONG_ID)='\0'; // se marca con caracter null la ultima posición reservada.
+	 char* p=p_id;
+	//*(p_id+LONG_ID)='\0'; // se marca con caracter null la ultima posición reservada.
+	 printf("\n>>>**%p\n",p_id);
 Usit c=1;
-	while((*id)!='\0')    //
+	while(*id!='\0')    //
 	{	
-	  printf("%c",*id);
+	  
 	  *p_id=*id;
 	   p_id++;
 	   id++;
@@ -26,8 +28,9 @@ Usit c=1;
 		  break;
 	   }
 	   c++;
+	  
 	}
-	printf("\n");
 	
-return p_id;
+	
+return (p);
 }

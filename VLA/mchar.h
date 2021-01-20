@@ -9,12 +9,12 @@
 
 typedef struct
 {
-    char*   indentificador;      //campo id de longitud LONG_ID.
-	             Usit      filas;      //campo unsigned int filas.
-	             Usit   columnas;      //campo unsigned int columnas. 
-	        Usit   etiqueta;      //campo unsigned int etiqueta.
-		         Usic       dato;      //campo unsigned char.
-	char*  direccion;      // direccion de tipo char.
+    char*   indentificador;//campo id de longitud LONG_ID.
+	Usit      filas;      //campo unsigned int filas.
+	Usit   columnas;      //campo unsigned int columnas. 
+	Usit   etiqueta;      //campo unsigned int etiqueta.
+	Usic       dato;      //campo unsigned char.
+	char*  direccion;     // direccion de tipo char.
 	
 }T_mchar;               //registro mchar.
 
