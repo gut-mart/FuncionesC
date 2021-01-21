@@ -17,6 +17,6 @@ typedef struct
 	
 }T_mchar;               //registro mchar.
 
-T_mchar* mchar(Usit filas,Usit columnas,char* id,Usic dato);
+T_mchar* mchar(Usit filas,Usit columnas,char* id);
 
 #endif

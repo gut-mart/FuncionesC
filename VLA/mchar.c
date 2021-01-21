@@ -8,7 +8,7 @@
 #include "definir_variables.h"
 #include "id_etiqueta.h"
 #include "direccion.h"
-T_mchar* mchar(Usit filas,Usit columnas,char* id,Usic dato){
+T_mchar* mchar(Usit filas,Usit columnas,char* id){
 	
 	T_mchar* p_mchar=ini_mchar(); //Esta funcion solo se inicia una vez.
 	
