@@ -13,7 +13,6 @@ typedef struct
 	Usit      filas;      //campo unsigned int filas.
 	Usit   columnas;      //campo unsigned int columnas. 
 	Usit   etiqueta;      //campo unsigned int etiqueta.
-	Usic       dato;      //campo unsigned char.
 	char*  direccion;     // direccion de tipo char.
 	
 }T_mchar;               //registro mchar.
