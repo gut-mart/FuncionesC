@@ -30,7 +30,7 @@ char* direccion(Usit filas,Usit columnas)
 	c++;
 	p++;
 	}
-	
+	printf("\n");
 	return p_direccion;
 	
 }
